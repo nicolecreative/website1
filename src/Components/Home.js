@@ -12,10 +12,10 @@ function Home({ selectedButton, setPageState }) {
   };
 
   const projectImages = {
-    'Project 1': 'https://nicolecreative.github.io/website/image1.jpg',
-    'Project 2': 'https://nicolecreative.github.io/website/image2.jpg',
-    'Project 3': 'https://nicolecreative.github.io/website/image3.jpg',
-    'Project 4': 'https://nicolecreative.github.io/website/image4.jpg',
+    'Project 1': 'https://nicolecreative.github.io/website1/image1.jpg',
+    'Project 2': 'https://nicolecreative.github.io/website1/image2.jpg',
+    'Project 3': 'https://nicolecreative.github.io/website1/image3.jpg',
+    'Project 4': 'https://nicolecreative.github.io/website1/image4.jpg',
   };
 
   // Define button project orders

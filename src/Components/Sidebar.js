@@ -30,7 +30,7 @@ function Sidebar({ selectedButton, setSelectedButton, setPageState, pageState })
     <div style={{ height: '100vh'}}>
       <div className='logo2' onClick={handleLogoClick}>
         <a href="/" className="nicolebachman.com/home">
-          <img src={'https://nicolecreative.github.io/website/nlogo.png'} alt="Logo" />
+          <img src={'https://nicolecreative.github.io/website1/nlogo.png'} alt="Logo" />
         </a>
       </div>
       
@@ -42,7 +42,7 @@ function Sidebar({ selectedButton, setSelectedButton, setPageState, pageState })
       <div className={`arrow-wrapper ${['about', 'project1', 'project2', 'project3', 'project4'].includes(pageState) ? 'visible' : ''}`}
            onMouseEnter={handleHover}
            onMouseLeave={handleMouseLeave}>
-        <img src={isHovered ? 'https://nicolecreative.github.io/website/greenbackbutton.png' : 'https://nicolecreative.github.io/website/backbutton.png'} alt="Back" onClick={handleArrowClick} />
+        <img src={isHovered ? 'https://nicolecreative.github.io/website1/greenbackbutton.png' : 'https://nicolecreative.github.io/website1/backbutton.png'} alt="Back" onClick={handleArrowClick} />
       </div>
 
       <div className="sidebar-footer-wrapper"> 

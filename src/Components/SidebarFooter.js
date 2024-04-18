@@ -20,7 +20,7 @@ function SidebarFooter({ setPageState }) {
       <div id="downloads">
         <DownloadText text="pdf portfolio" link="https://youtube.com" />
         {/* Change the link to the direct download link of the resume */}
-        <DownloadText text="resume" link="/resume.pdf" />
+        <DownloadText text="resume" link="https://nicolecreative.github.io/website1/resume.pdf" />
       </div>
     </div>
   );

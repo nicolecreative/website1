@@ -40,7 +40,7 @@ function App() {
       <div className="mobile-header">
       <div className="mobile-logo" onClick={handleLogoClick}>
         <a href="/" className="nicolebachman.com/home">
-          <img src={"https://nicolecreative.github.io/website/nlogo.png"} alt="Logo" />
+          <img src={"https://nicolecreative.github.io/website1/nlogo.png"} alt="Logo" />
         </a>
       </div>
             
