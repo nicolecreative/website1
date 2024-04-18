@@ -8,7 +8,7 @@ function DownloadText({ text, link }) {
     <div className="download-text" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
       <a href={link} target="_blank" rel="noopener noreferrer">
         <h3>{text}</h3>
-        <img src={isHovered ? 'https://nicolecreative.github.io/website1/green.png' : 'https://nicolecreative.github.io/website/download1.png'} alt="Download Icon" />
+        <img src={isHovered ? 'https://nicolecreative.github.io/website1/green.png' : 'https://nicolecreative.github.io/website1/download1.png'} alt="Download Icon" />
       </a>
     </div>
   );
