@@ -1,0 +1,52 @@
+.titleTag {
+    display: flex;
+     /* Vertically center the content */
+    margin-top: 1%;
+    margin-bottom: 5%;
+    vertical-align: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.titleTag h3 {
+    margin: 0; /* Remove default margin */
+    margin-top: .5%;
+    font-size: 15pt;
+}
+
+.pill {
+    display: inline-block;
+    background-color: #E3E3E3;
+    border-radius: 20px; /* Adjust border-radius to create a pill shape */
+    padding: 5px 10px; /* Adjust padding for spacing */
+    margin-right: 10px; /* Adjust margin between pills */
+}
+
+.pill h3 {
+    color: black;
+    font-size: 13px;
+    line-height: 10px;
+}
+
+.tagContainer {
+    display: flex;
+    margin-top: 3%;
+    flex-direction: row;
+    /* Horizontally center the pills within the container */
+    margin-left: 20%;/* Adjust spacing between pills */
+}
+
+@media (max-width: 1000px) {
+
+    .titleTag{
+        justify-content: center;
+        vertical-align: center;
+        
+        
+    }
+
+    .tagContainer {
+      display: none; /* Hide the tag container */
+      
+    }
+  }

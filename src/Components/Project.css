@@ -1,0 +1,50 @@
+.projectImageContainer {
+    perspective: 5500px; /* Add perspective for 3D effect */
+}
+
+.projectImage {
+    width: 70%; /* Set width to 70% of the container */
+    position: relative; /* Position relative for absolutely positioned children */
+    overflow: hidden; /* Hide overflow */
+    border-radius: 19px; /* Add rounded corners */
+    margin: 0 auto; /* Center horizontally */
+    cursor: pointer;
+    transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1); /* Smooth transition */
+    transform-style: preserve-3d; /* Preserve 3D transformations */
+}
+
+.projectImage::before {
+    content: ""; /* Add an empty pseudo-element */
+    display: block; /* Make it a block-level element */
+    padding-top: calc(60%); /* Set padding-top to maintain 1:2 aspect ratio */
+}
+
+.projectImage img {
+    position: absolute; /* Position the image absolutely */
+    top: 0; /* Position from the top */
+    left: 0; /* Position from the left */
+    width: 100%; /* Make the image fill the container */
+    height: 100%; /* Make the image fill the container */
+    object-fit: cover; /* Crop the image to cover the container */
+    transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1); /* Smooth transition */
+}
+
+.projectImage:hover {   
+    transform: perspective(400px) rotateY(-8deg);
+}
+
+.projectImage.rotating {
+    transition: transform 0.3s cubic-bezier(0.1, -0.6, 0.2, 0); /* Ease-out transition */
+}
+
+@media (max-width: 430px) {
+    .projectImage {
+        border: 1px solid white; /* Set border style to solid white for screens under 431 pixels */
+    }
+}
+
+@media (min-width: 431px) {
+    .projectImage {
+        border: 2px solid white; /* Set border style to solid white for screens 431 pixels and above */
+    }
+}

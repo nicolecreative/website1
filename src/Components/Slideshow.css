@@ -1,0 +1,99 @@
+/* Slideshow.css */
+
+/* Slideshow container */
+
+:root {
+    --arrow-height: 20px; /* Set the height of the arrow */
+  }
+
+
+.slideshow {
+    position: relative;
+    width: 78%; /* Set width to 70% of the parent container */
+    max-width: 1000px; /* Limit maximum width to 600px */
+    height: 0; /* Set height to 0 to maintain aspect ratio */
+    padding-top: calc(1 / 2 * 100%); /* Calculate height based on the aspect ratio (3:2) */
+    overflow: hidden; /* Hide overflowing content */
+    border-radius: 15px; /* Add rounded corners */
+    min-width: 300px;
+}
+
+/* Image */
+.image {
+    position: absolute; /* Position the image absolutely */
+    top: 0; /* Align image to the top */
+    left: 0; /* Align image to the left */
+    width: 100%; /* Set width to 100% of the container */
+    height: 100%; /* Set height to 100% of the container */
+    object-fit: cover; /* Cover the entire container while maintaining aspect ratio */
+}
+
+/* Arrow container */
+/* Arrow container */
+.arrow-container {
+    position: absolute;
+    top: 50%; /* Position the arrow container at the vertical center of the slideshow */
+    left: 50%; /* Position the arrow container at the horizontal center of the slideshow */
+    transform: translate(-50%, -50%); /* Adjust the position to center the arrow container */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically */
+    width: 97%; /* Adjusted width */
+}
+/* Arrow buttons */
+.arrow {
+    width: var(--arrow-height); /* Adjust the width as needed */
+    height: var(--arrow-height); /* Adjust the height as needed */
+    background-color: rgba(0, 0, 0, 0); /* Semi-transparent background */
+    color: white;
+    font-size: 24px; /* Adjust the font size as needed */
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  
+
+
+.circle {
+    width: 35px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.0);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    
+
+}
+
+.circle:hover{
+    background-color: rgba(0, 0, 0, 1.0);
+    transform: scale(1.2); 
+    cursor: pointer;
+}
+
+
+.arrow .prev{
+    width: 20px;
+    height: 20px;
+}
+
+
+
+/* Page text */
+.page-text {
+    margin-top: 10px; /* Add margin to separate from slideshow */
+    color: white;
+    font-size: 18px;
+    margin-left: 60%;
+}
+
+/* Slideshow component container */
+.slideshowComp {
+    position: relative;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Align items horizontally */
+}

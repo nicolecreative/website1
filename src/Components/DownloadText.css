@@ -1,0 +1,43 @@
+
+.download-text {
+  display: inline-block; /* Use inline-flex to allow flex properties */
+  align-items: center; /* Align items vertically */
+  position: relative; /* Ensure the container is positioned relatively */
+  width: auto;
+
+  
+}
+
+#downloads{
+  margin-right:25%;
+  min-width: 200px;
+}
+
+.download-text h3 {
+  display:inline-block;
+  width:auto;
+  margin-left: 0px;
+  margin-right: 35px; /* Add spacing between text and icon */
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.download-text img {
+  position: absolute; /* Position the icon absolutely within the container */
+  top:60%;
+  right: 0; /* Align the icon to the right within the container */
+  transform: translateY(-50%); /* Adjust vertical alignment */
+  width: 18px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.download-text:hover h3{
+  color: #5CFF6D;
+}
+
+.download-text:hover img {
+  top: 70%; /* New position on hover */
+}
+

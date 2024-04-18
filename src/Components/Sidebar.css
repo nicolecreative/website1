@@ -1,0 +1,42 @@
+
+.logo2 img{
+    height: 80px;
+    width: auto;
+    margin-left: 15%;
+    margin-top: 20%;
+    margin-bottom: 10%;
+    
+}
+
+.arrow-wrapper img:hover {
+    transform: scale(1.2); /* Scale up the arrow */
+    cursor: pointer; /* Change cursor to pointer */
+  }
+
+.navigation-wrapper.invisible {
+    display: none;
+  }
+  
+  /* Show the arrow button when pageState is 'about' or 'project' */
+  .arrow-wrapper.visible {
+    display: inline-block; /* You may need to adjust the positioning and styling */
+    margin-left: 15%;
+
+  }
+
+  .arrow-wrapper img{
+    width: 35px;
+    height: auto;
+
+  }
+  
+  
+  /* Hide the arrow button by default */
+  .arrow-wrapper {
+    display: none;
+  }
+
+.sidebar-footer-wrapper {
+    display: block; /* Ensure the sidebar footer is initially visible */
+  }
+  

@@ -1,0 +1,15 @@
+.homeBody{
+    margin-top: 8.5%;
+    margin-bottom: 10%;
+    vertical-align: center;
+    justify-content: center;
+  }
+  
+  @media (max-width: 431px) {
+    .homeBody {
+      width: 100%;
+      /* Adjust margins or other styles for smaller screens */
+       /* Example adjustment */
+      margin-bottom: 65%; /* Example adjustment */
+    }
+  }
