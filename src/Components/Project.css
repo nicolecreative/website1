@@ -16,7 +16,7 @@
 .projectImage::before {
     content: ""; /* Add an empty pseudo-element */
     display: block; /* Make it a block-level element */
-    padding-top: calc(60%); /* Set padding-top to maintain 1:2 aspect ratio */
+     /* Set padding-top to maintain 1:2 aspect ratio */
 }
 
 .projectImage img {
