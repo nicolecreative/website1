@@ -1,1 +1,10 @@
 
+.slide{
+    width: 100%;
+    padding-top: 155px;
+}
+
+.title h2{
+    text-align: left;
+    margin-left: 5%;
+}

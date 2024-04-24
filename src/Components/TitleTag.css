@@ -1,52 +1,119 @@
 .titleTag {
+    width: 100%;
     display: flex;
-     /* Vertically center the content */
-    margin-top: 1%;
-    margin-bottom: 5%;
-    vertical-align: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.titleTag h3 {
-    margin: 0; /* Remove default margin */
-    margin-top: .5%;
-    font-size: 15pt;
-}
-
-.pill {
-    display: inline-block;
-    background-color: #E3E3E3;
-    border-radius: 20px; /* Adjust border-radius to create a pill shape */
-    padding: 5px 10px; /* Adjust padding for spacing */
-    margin-right: 10px; /* Adjust margin between pills */
-}
-
-.pill h3 {
-    color: black;
-    font-size: 13px;
-    line-height: 10px;
-}
-
-.tagContainer {
-    display: flex;
-    margin-top: 3%;
     flex-direction: row;
-    /* Horizontally center the pills within the container */
-    margin-left: 20%;/* Adjust spacing between pills */
-}
-
-@media (max-width: 1000px) {
-
-    .titleTag{
-        justify-content: center;
-        vertical-align: center;
-        
-        
-    }
-
+    margin-bottom: 5%;
+    margin-top: 7%;
+    vertical-align: center;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  
+  .titleTag h3 {
+    margin: 0;
+    text-align: left;
+    font-size: 15pt;
+  }
+  
+  .title {
+    margin-left: 2%;
+    margin-top: .75%;
+    position: relative; /* Position relative for absolute positioning of child elements */
+  }
+  
+  .pill {
+    display: inline-block;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-right: 10px;
+  }
+  
+  .pill h3 {
+    color: #D6D6D6;
+    font-size: 13pt;
+    line-height: 10px;
+  }
+  
+  .tagContainer {
+    display: flex;
+    margin-top: 4px;
+    flex-direction: row;
+    right: 0;
+    width: 100%;
+    justify-content: right;
+  }
+  
+  @media (max-width: 1000px) {
     .tagContainer {
-      display: none; /* Hide the tag container */
-      
+      right: 50%;
     }
   }
+
+  
+/* Define the clipping container */
+.clippingContainer {
+    position: relative; /* Position relative for absolutely positioned children */
+    width: 200px; /* Define the desired width */
+    height: 30px; /* Define the desired height */
+    overflow: hidden; /* Clip the contents that overflow the defined dimensions */
+}
+
+/* Position the arrow container within the clipping container */
+.arrowContainer {
+    position: absolute;
+    top: 0; /* Align the arrow container to the top */
+}
+
+/* Styles for the arrow image */
+.arrowImage {
+    display: block;
+    height: 25px;
+    padding-top: 0%;
+    padding-left: 8%;
+    transition: transform 0.1s ease, /* Add transition for smooth sliding */
+                opacity 0.1s ease; /* Add transition for opacity */
+    transform: translateX(-200%); /* Initially position the arrow off the screen to the left */
+    opacity: 0; /* Initially hide the arrow */
+}
+
+/* Animation for sliding the arrow in */
+.slideIn {
+    transform: translateX(150%); /* Slide the arrow in from the left when hovered */
+    opacity: 1; /* Make the arrow visible */
+    transition-delay: 0.1s; /* Add a delay of 0.3s to the slide-in animation */
+    transition-timing-function: ease-out;
+}
+
+.slideOut {
+    transform: translateX(-200%); /* Slide the arrow in from the left when hovered */
+    opacity: 1; /* Make the arrow visible */
+    transition-timing-function: ease-out;
+    
+}
+
+.fadeIn {
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+  }
+  
+  .fadeOut {
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+  }
+  .titleTag {
+    transition: opacity 0.3s ease; /* Smooth transition effect */
+  }
+  
+  .titleTag.disappear {
+    opacity: 0; /* Make the component transparent when it disappears */
+    pointer-events: none; /* Disable pointer events to prevent interaction when hidden */
+  }
+  
+  .titleTag {
+  opacity: 0; /* Initially set opacity to 0 */
+  transition: opacity 0.3s ease; /* Smooth transition effect for opacity */
+}
+
+.titleTag.appear {
+  opacity: 1; /* Set opacity to 1 when above 600 pixels */
+}

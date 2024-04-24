@@ -3,10 +3,11 @@ import React from 'react';
 function Tag1({ categories }) {
   // Map category numbers to category names
   const categoryMap = {
+
     1: 'Branding',
-    2: 'UI',
-    3: 'Glitch',
-    4: 'Motion',
+    2: 'Motion',
+    3: 'UI',
+    4: ' ',
   };
 
   return (

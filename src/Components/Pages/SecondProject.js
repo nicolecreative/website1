@@ -5,8 +5,14 @@ import './SecondProject.css';
 function SecondProject() {
     return (
         <div>
-            <h1>Typographic Dialogue</h1>
-            <Slideshow />
+            
+            <div className="slide">
+            <Slideshow/>
+            </div>
+
+            <div className="title">
+            <h2>TYPOGRAPHIC DIALOGUE</h2>
+            </div>
             
         </div>
     );

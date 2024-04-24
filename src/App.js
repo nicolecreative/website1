@@ -51,7 +51,7 @@ function App() {
         </div>
         <div className="main-wrapper">
           {/* Pass down selectedButton, pageState, and setPageState to MainComponent */}
-          <MainComponent selectedButton={selectedButton} pageState={pageState} setPageState={setPageState} />
+          <MainComponent selectedButton={selectedButton} pageState={pageState} setPageState={setPageState} className="mainComp"/>
         </div>
         <div className="mobile-footer">
           {/* Pass down selectedButton, pageState, and setPageState to MainComponent */}

@@ -9,8 +9,8 @@
 
 .slideshow {
     position: relative;
-    width: 78%; /* Set width to 70% of the parent container */
-    max-width: 1000px; /* Limit maximum width to 600px */
+    width: 90%;
+    height: auto; /* Set width to 70% of the parent container */ /* Limit maximum width to 600px */
     height: 0; /* Set height to 0 to maintain aspect ratio */
     padding-top: calc(1 / 2 * 100%); /* Calculate height based on the aspect ratio (3:2) */
     overflow: hidden; /* Hide overflowing content */

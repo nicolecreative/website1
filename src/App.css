@@ -40,7 +40,7 @@ h2 {
 h3 {
   /* Styles for h3 */
   font-family: 'M PLUS 1';
-  font-size: 15pt; /* Example font size */
+  font-size: 13.5pt; /* Example font size */
   font-weight: 450; /* Example font weight */
   color: #f0f0f0; /* Example color */
   line-height: 20px;
@@ -81,8 +81,7 @@ p{
   height: 100vh; /* Set height to 100% of viewport height */
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -118,7 +117,13 @@ p{
   height: 25px;
 }
 
+
 @media (min-width: 431px){
+  
+  .App-header .projectImage {
+    width: 100%;
+    height: auto;
+  }
 
   .mobile-footer{
     display: none;
@@ -129,7 +134,7 @@ p{
   display: flex; /* Enable flex layout */
 }
 .main-wrapper {
-  margin-left: 20%;
+  margin-left: 18%;
 }
 
 .mobile-header{
@@ -140,12 +145,14 @@ p{
  .App-header .sidebar-footer-wrapper {
   flex-direction: column;
   position:absolute;
-
+  background-color: black;
   max-width: 300px;
-  bottom:5%;
-  margin-top: auto; /* Position the sidebar footer relative to the sidebar wrapper */
+  bottom:0%;
+  padding-left:40px;
+  padding-bottom: 40px;
+  padding-top: auto; /* Position the sidebar footer relative to the sidebar wrapper */
    /* Align the sidebar footer to the bottom of the sidebar wrapper */
-  left: 15%; /* Align the sidebar footer to the left of the sidebar wrapper */
+   /* Align the sidebar footer to the left of the sidebar wrapper */
   width: 100%; /* Make the sidebar footer occupy the full width of the sidebar wrapper */
    /* Example background color */
   /* Example text color */
@@ -158,9 +165,8 @@ p{
   position: fixed; /* Fix the sidebar position */
   height: 100vh;
   left: -2px; /* Position it at the left */
-  width: 20%; /* Set the width */
-  min-width: 250px; /* Minimum width of 100 pixels */
-  border: 0px solid white; /* White outline */
+  width: 17%; /* Set the width */
+  min-width: 230px; /* Minimum width of 100 pixels */ /* White outline */
   
 }
 
@@ -179,7 +185,7 @@ p{
 @media (max-width: 1200px) {
    .App-header .sidebar-wrapper {
     flex: 0 0 auto; /* Allow the sidebar to shrink as needed */
-    min-width: 250px; /* Reset minimum width */
+    min-width: 200px; /* Reset minimum width */
     margin-right: 10px; /* Add margin for spacing */
   }
   
@@ -188,17 +194,17 @@ p{
   }
 
    .App-header .main-wrapper {
-    width: calc(100% - 260px); /* Set width to fill remaining space after sidebar width and margin */
-    margin-left: 250px; /* Adjust margin to prevent overlap */
+    width: calc(100% - 200px); /* Set width to fill remaining space after sidebar width and margin */
+    margin-left: 200px; /* Adjust margin to prevent overlap */
+    display: flex;
+    flex-direction: column;
     min-width: 300px; /* Set minimum width */
     overflow-x: hidden;
   }
 
    .App-header .projectImage {
-    width: 60%;
-    vertical-align: center;
-    justify-content: center;
-    border: 1.5px solid white;
+    width: 100%;
+    height: auto;
   }
 }
 }
@@ -219,10 +225,7 @@ p{
     }
 
   .App-header .projectImage {
-    width: 90%;
-    vertical-align: center;
-    justify-content: center;
-    border: 1.5px solid white;
+    width: 100%;
   }
 
   .App-header {
@@ -241,7 +244,7 @@ p{
 .main-wrapper {
   background-color: black;
   color: white;
-  width: 80%;
+  width: 100%;
   text-align: center;
   overflow-y: auto; /* Enable vertical scrolling when content exceeds wrapper height */
   max-height: 100vh; /* Limit maximum height to viewport height */

@@ -45,12 +45,7 @@ function Navigation({ selectedButton, setSelectedButton }) {
         handleButtonSelect={handleButtonSelect}
         buttonName={"UI"}
       />
-      <LargeButton
-        buttonId={5}
-        selectedButton={selectedButton}
-        handleButtonSelect={handleButtonSelect}
-        buttonName={"glitch"}
-      />
+     
     </div>
   );
 }

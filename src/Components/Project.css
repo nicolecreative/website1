@@ -1,50 +1,57 @@
+
+
 .projectImageContainer {
     perspective: 5500px; /* Add perspective for 3D effect */
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: space-between; /* Space items evenly */
 }
 
 .projectImage {
-    width: 70%; /* Set width to 70% of the container */
+    width: auto; /* Allow width to adjust based on image size */
+    height: auto; /* Allow height to adjust based on image size */ /* Set maximum width to 30% of the container */
+    /* Set maximum height for consistency */
     position: relative; /* Position relative for absolutely positioned children */
     overflow: hidden; /* Hide overflow */
     border-radius: 19px; /* Add rounded corners */
-    margin: 0 auto; /* Center horizontally */
     cursor: pointer;
     transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1); /* Smooth transition */
     transform-style: preserve-3d; /* Preserve 3D transformations */
 }
 
-.projectImage::before {
-    content: ""; /* Add an empty pseudo-element */
-    display: block; /* Make it a block-level element */
-     /* Set padding-top to maintain 1:2 aspect ratio */
-}
+
 
 .projectImage img {
-    position: absolute; /* Position the image absolutely */
-    top: 0; /* Position from the top */
-    left: 0; /* Position from the left */
+    display: block; /* Make the image a block-level element */
     width: 100%; /* Make the image fill the container */
-    height: 100%; /* Make the image fill the container */
+    height: auto; /* Allow height to adjust based on width */
     object-fit: cover; /* Crop the image to cover the container */
-    transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1); /* Smooth transition */
 }
 
-.projectImage:hover {   
-    transform: perspective(400px) rotateY(-8deg);
-}
+
 
 .projectImage.rotating {
     transition: transform 0.3s cubic-bezier(0.1, -0.6, 0.2, 0); /* Ease-out transition */
 }
 
-@media (max-width: 430px) {
-    .projectImage {
-        border: 1px solid white; /* Set border style to solid white for screens under 431 pixels */
-    }
+
+
+
+.projectComp {
+    width: auto; /* Adjust width to fit content */
+    height: auto;
+    padding-left: 5%; /* Add padding to the left */
+    padding-right: 5%; /* Add padding to the right */
+    padding-bottom: 12%;
 }
 
-@media (min-width: 431px) {
-    .projectImage {
-        border: 2px solid white; /* Set border style to solid white for screens 431 pixels and above */
-    }
+.projectComp:hover .projectImage {
+    transform: perspective(400px) rotateY(-8deg) scale(95%) translate(-5px) ;
+   
+    border: 1.2pt solid #EDEDED; /* Add white border */
+    box-sizing: border-box; /* Include border thickness in the total width and height */
 }
+
+
+  
+

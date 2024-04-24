@@ -2,9 +2,9 @@
 .logo2 img{
     height: 80px;
     width: auto;
-    margin-left: 15%;
-    margin-top: 20%;
-    margin-bottom: 10%;
+    margin-left: 40px;
+    margin-top: 40px;
+    margin-bottom: 25px;
     
 }
 
@@ -24,11 +24,28 @@
 
   }
 
+  .sidebar-footer-wrapper .artButton img{
+    width: 135px;
+    padding-bottom: 1px;
+    height: auto;
+  }
+
+  .sidebar-footer-wrapper .aboutme img{
+    width: 105px;
+    padding-bottom: 1px;
+    height: auto;
+  }
+  .topButtons{
+    padding-bottom: 5px;
+  }
+
   .arrow-wrapper img{
     width: 35px;
     height: auto;
+    padding-left: 4px;
 
   }
+  
   
   
   /* Hide the arrow button by default */

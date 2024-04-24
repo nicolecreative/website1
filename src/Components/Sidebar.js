@@ -35,11 +35,11 @@ function Sidebar({ selectedButton, setSelectedButton, setPageState, pageState })
       </div>
       
       {/* Pass down the setSelectedButton and setPageState functions to the Navigation and SidebarFooter components */}
-      <div className={`navigation-wrapper ${['about', 'project1', 'project2', 'project3', 'project4'].includes(pageState) ? 'invisible' : ''}`}>
+      <div className={`navigation-wrapper ${['about', 'project1', 'project2', 'project3', 'project4', 'generativeart'].includes(pageState) ? 'invisible' : ''}`}>
         <Navigation selectedButton={selectedButton} setSelectedButton={setSelectedButton} />
       </div>
        
-      <div className={`arrow-wrapper ${['about', 'project1', 'project2', 'project3', 'project4'].includes(pageState) ? 'visible' : ''}`}
+      <div className={`arrow-wrapper ${['about', 'project1', 'project2', 'project3', 'project4', 'generativeart'].includes(pageState) ? 'visible' : ''}`}
            onMouseEnter={handleHover}
            onMouseLeave={handleMouseLeave}>
         <img src={isHovered ? 'https://nicolecreative.github.io/website1/greenbackbutton.png' : 'https://nicolecreative.github.io/website1/backbutton.png'} alt="Back" onClick={handleArrowClick} />

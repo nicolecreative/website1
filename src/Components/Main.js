@@ -5,6 +5,7 @@ import FirstProject from './Pages/FirstProject';
 import SecondProject from './Pages/SecondProject';
 import ThirdProject from './Pages/ThirdProject';
 import FourthProject from './Pages/FourthProject';
+import GenerativeArt from './Pages/GenerativeArt'
 
 function MainComponent({ selectedButton, pageState, setPageState }) {
 
@@ -19,6 +20,9 @@ function MainComponent({ selectedButton, pageState, setPageState }) {
     case 'about':
       componentToRender = <AboutMe />;
       break;
+    case 'generativeart':
+    componentToRender = <GenerativeArt />;
+    break;
     case 'project1':
       componentToRender = <FirstProject />;
       break;
