@@ -19,8 +19,8 @@ function Home({ selectedButton, setPageState }) {
   const projectImages = {
     [projectName1]: 'https://nicolecreative.github.io/website1/image45.jpg',
     [projectName2]: 'https://nicolecreative.github.io/website1/image2.jpg',
-    [projectName3]: 'https://nicolecreative.github.io/website1/image3.jpg',
-    [projectName4]: 'https://nicolecreative.github.io/website1/image4.jpg',
+    [projectName3]: 'https://nicolecreative.github.io/website1/image3op.jpg',
+    [projectName4]: 'https://nicolecreative.github.io/website1/image4xx.jpg',
   };
 
   // Define button project orders
