@@ -13,6 +13,9 @@ function SecondProject() {
             <div className="title">
             <h2>TYPOGRAPHIC DIALOGUE</h2>
             </div>
+            <div className="pgraph">
+            <h5>Typographic Dialogue is a typset book in which two texts are presented together and set based on the meanings, being intentional and making mistakes.</h5>
+            </div>
             
         </div>
     );
